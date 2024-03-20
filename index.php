@@ -18,9 +18,9 @@
     <div id="app">
 
         <header>
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Logo</a>
+            <nav class="navbar h-100">
+                <div class="container-fluid h-100 p-3">
+                    <img class="h-100" src="./img/logo-spotify.png" alt="">
                 </div>
             </nav>
         </header>

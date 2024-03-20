@@ -9,7 +9,12 @@ body{
 }
 
 header{
+    height: 100px;
     background-color: #081d31;
+}
+
+header img{
+    height: 100%;
 }
 
 .container{
