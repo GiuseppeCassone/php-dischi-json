@@ -27,7 +27,7 @@
 
         <div class="container p-5">
             <div class="row flex-wrap">
-                <div class="card" v-for="disk in disks">
+                <div class="card" v-for="(disk, index) in disks" @click="discInfo(index)">
                     <img :src="disk.poster" alt="">
                     <div class="text-center py-3 d-flex flex-column gap-3">
                         <h5>{{ disk.title }}</h5>
@@ -35,6 +35,17 @@
                         <span class="fw-bold">{{ disk.year }}</span>
                     </div>
                 </div>
+            </div>
+            <div v-if="showDetails" class="splash d-flex justify-content-center align-items-center fixed-center">
+                <div class="card">
+                    <img :src="discIndex.poster" alt="">
+                    <div class="text-center py-3 d-flex flex-column gap-3">
+                        <h5>{{ discIndex.title }}</h5>
+                        <span>{{ discIndex.author }}</span>
+                        <span class="fw-bold">{{ discIndex.year }}</span>
+                    </div>
+                </div>
+
             </div>
         </div>
        
