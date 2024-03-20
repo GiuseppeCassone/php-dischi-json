@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1D2D3C;
+}
+
+header{
+    background-color: #081d31;
+}
+
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    gap: 25px;
+}
+
+.card{
+    width: calc(100% / 3 - 25px / 3 * 2);
+    padding: 20px 40px;
+    background-color: #112030;
+    color: white;
+}
