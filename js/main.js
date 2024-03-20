@@ -16,6 +16,10 @@ createApp({
                 this.discIndex = res.data[infoIndex];
             });
             this.showDetails = true;
+        },
+
+        closeDetails(){
+            this.showDetails = false;
         }
     },
 

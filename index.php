@@ -43,9 +43,10 @@
                         <h5>{{ discIndex.title }}</h5>
                         <span>{{ discIndex.author }}</span>
                         <span class="fw-bold">{{ discIndex.year }}</span>
+                        <span>{{ discIndex.genre }}</span>
                     </div>
                 </div>
-
+                <button @click="closeDetails()">X</button>
             </div>
         </div>
        
